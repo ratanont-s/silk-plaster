@@ -14,6 +14,14 @@ $btn-back-color: white;
 $btn-back-bg: #6A3756;
 
 
+// Body{
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
 // Header
 header {
   .dropdown {
@@ -28,11 +36,13 @@ header {
         color: white;
         z-index: 0;
       }
-      &.show{
+
+      &.show {
         &::before {
           content: '\25B2';
         }
       }
+
       &-toggle {
         position: relative;
         z-index: 1;
@@ -64,6 +74,11 @@ header {
       padding-left: 2.75em;
     }
   }
+}
+
+// Footer
+footer {
+  margin-top: auto;
 }
 
 @import './catalog';
