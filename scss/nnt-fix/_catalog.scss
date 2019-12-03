@@ -1,0 +1,75 @@
+#catalogPage {
+  padding-top: 76px;
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    padding-top: 80px;
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    padding-top: 120px;
+  }
+
+  .catalog-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 2em;
+    margin: 1.5rem 0;
+
+    span {
+      display: inline-block;
+      background-color: $catalog-title-bg;
+      color: $catalog-title-color;
+      border-radius: 5px;
+      padding: .5rem 1.5rem .75rem;
+    }
+  }
+
+  .card-catalog {
+    padding-top: 0;
+    border-radius: 0;
+    border-width: 0;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+      background-color: $card-catalog-hover-bg;
+
+      .card-title {
+        color: $card-catalog-title-hover-color;
+      }
+    }
+
+    .card {
+      &-img {
+        padding-top: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) {
+          height: 210px;
+        }
+
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {
+          height: 262px;
+        }
+      }
+
+      &-body {
+        padding: .5rem 1rem;
+      }
+
+      &-title {
+        text-align: center;
+        color: $card-catalog-title-color;
+        font-size: 1.125em;
+        font-weight: normal;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

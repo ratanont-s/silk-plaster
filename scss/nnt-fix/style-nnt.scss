@@ -1,0 +1,70 @@
+// Variable
+$dropdown-bg: #323852;
+$dropdown-color: white;
+$dropdown-item-border-color: white;
+
+$catalog-title-bg: #323852;
+$catalog-title-color: white;
+
+$card-catalog-title-color: #333;
+$card-catalog-title-hover-color: white;
+$card-catalog-hover-bg: #323852;
+
+$btn-back-color: white;
+$btn-back-bg: #6A3756;
+
+
+// Header
+header {
+  .dropdown {
+
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) {
+      &::before {
+        content: '\25BC';
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        color: white;
+        z-index: 0;
+      }
+      &.show{
+        &::before {
+          content: '\25B2';
+        }
+      }
+      &-toggle {
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    &-menu {
+      background-color: $dropdown-bg;
+      margin-top: -1px;
+      border-width: 0;
+      border-radius: 0;
+    }
+
+    &-header,
+    &-item {
+      &:not(:last-child) {
+        border-bottom: 1px solid $dropdown-item-border-color;
+      }
+    }
+
+    &-header {
+      color: $dropdown-color;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+
+    &-item {
+      color: $dropdown-color;
+      padding-left: 2.75em;
+    }
+  }
+}
+
+@import './catalog';
+@import './catalog-detail';

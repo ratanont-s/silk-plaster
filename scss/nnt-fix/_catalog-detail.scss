@@ -1,0 +1,29 @@
+#catalogDetailPage{
+  margin-top: 76px;
+  padding: 2rem 0;
+  color: #333;
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    margin-top: 80px;
+    padding: 3rem 0;
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    margin-top: 120px;
+    padding: 4rem 0;
+  }
+
+  .catalog-detail{
+    &-img{
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .btn-back{
+    padding: .15rem 1.25rem;
+    color: $btn-back-color;
+    background-color: $btn-back-bg;
+  }
+}
