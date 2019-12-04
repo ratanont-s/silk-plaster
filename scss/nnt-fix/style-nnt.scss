@@ -58,9 +58,10 @@ header {
 
     &-header,
     &-item {
-      &:not(:last-child) {
-        border-bottom: 1px solid $dropdown-item-border-color;
-      }
+      border-bottom: 1px solid $dropdown-item-border-color;
+      // &:not(:last-child) {
+      //   border-bottom: 1px solid $dropdown-item-border-color;
+      // }
     }
 
     &-header {
