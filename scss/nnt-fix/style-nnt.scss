@@ -54,6 +54,8 @@ header {
       margin-top: -1px;
       border-width: 0;
       border-radius: 0;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     &-header,
@@ -62,6 +64,10 @@ header {
       // &:not(:last-child) {
       //   border-bottom: 1px solid $dropdown-item-border-color;
       // }
+      &.active{
+        color: $dropdown-bg;
+        background-color: $dropdown-color;
+      }
     }
 
     &-header {
